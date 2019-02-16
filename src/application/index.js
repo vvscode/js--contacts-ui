@@ -8,6 +8,7 @@ import RegisterPage from '../pages/register/index';
 import ContactsPage from '../pages/contacts/index';
 import LoginPage from '../pages/login/index';
 import store from '../redux/store';
+import privateRoute from './privateRoute';
 
 class App extends Component {
   render() {
@@ -18,7 +19,7 @@ class App extends Component {
             <Switch>
               <Route path="/login" component={LoginPage} />
               <Route path="/register" component={RegisterPage} />
-              <Route path="/contacts" component={ContactsPage} />
+              <Route path="/contacts" component={privateRoute(ContactsPage)} />
             <Route component={() => <Redirect to="/login" />} />
             </Switch>
           </Router>
