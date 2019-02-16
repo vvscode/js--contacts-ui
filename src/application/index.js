@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-d
 import { Provider } from "react-redux";
 import './App.css';
 
+import '../api';
 import RegisterPage from '../pages/register/index';
 import ContactsPage from '../pages/contacts/index';
 import LoginPage from '../pages/login/index';

@@ -1,3 +1,6 @@
+import * as constants from '../constants';
+console.log('constants', constants);
+
 export const login = ({ email, password }) => Promise.resolve({
   "message":"the request has succeeded",
   "data":{
