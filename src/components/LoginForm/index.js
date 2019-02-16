@@ -2,13 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 class LoginForm  extends React.Component {
-  propTypes = {
+  static propTypes = {
     message: PropTypes.string,
     onSubmit: PropTypes.func,
     inProgress: PropTypes.bool
   }
 
-  defaultProps = {
+  static defaultProps = {
     message: '',
     inProgress: false
   }

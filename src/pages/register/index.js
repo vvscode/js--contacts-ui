@@ -1,8 +1,9 @@
 import React from 'react';
+import RegistrationForm from '../../components/RegistrationForm/index';
 
 class RegisterPage extends React.Component {
   render() {
-    return <h1>Register</h1>
+    return <RegistrationForm />
   }
 }
 

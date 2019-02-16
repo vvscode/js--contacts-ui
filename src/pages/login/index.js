@@ -1,8 +1,15 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import LoginForm from '../../components/LoginForm/index';
 
 class LoginPage extends React.Component {
   render() {
-    return <h1>Login</h1>
+    return <div>
+      <LoginForm />
+      <div>
+        <Link to="/register">Register</Link>
+      </div>
+      </div>
   }
 }
 
